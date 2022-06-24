@@ -1,0 +1,8 @@
+Układ termometrów
+https://www.researchgate.net/profile/Ramon-Pallas-Areny/publication/228607211_ON_THE_DESIGN_OF_LOW-POWER_SIGNAL_CONDITIONERS_FOR_RESISTIVE_SENSORS/links/09e415100f0f8e7889000000/ON-THE-DESIGN-OF-LOW-POWER-SIGNAL-CONDITIONERS-FOR-RESISTIVE-SENSORS.pdf?origin=publication_detail
+
+Noty katalogowe
+https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf

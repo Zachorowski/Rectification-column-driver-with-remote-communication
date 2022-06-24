@@ -1,0 +1,2 @@
+Odczyty temperatury 
+http://ww1.microchip.com/downloads/en/AppNotes/00687b.pdf

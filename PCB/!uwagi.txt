@@ -1,0 +1,31 @@
+Brak wersji w tags. Zreorganizowałem repo.
+
+Stamp v2:
+
+SCH:
+1) X1 musi mieć podany konkretny model.
+2) Korzystął Pan z tego?  https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
+Dałbym jeszcze kondensator za L3 i L2, np. 100nF. Trzeba pamiętać, że L3 powinna mieć obciążalność 500mA.
+3) Czy L1 i C4 zostały dobrane tak aby dopasować linię do 50OHm z (30+j10)Ω? Tak 
+4) Sugeruję wyposażyć stampa w rezonator niskoczęstotliwościowy. Nie wiem czy ESP32 ma RTC i czy może być taktowane z rezonatora o wysokiej częstotliwości.
+5) Można dać mniejszy przyciski, np. https://www.maritex.com.pl/przelaczniki/przelaczniki_typu_tact_switch/lacznik_tact_switch_do_montazu_smt/tactd50h20b250-ct.html
+
+
+PCB:
+1) Z mniejszymi przyciskami da się zmniejszyć stapma do długości listw.
+2) Sugerowałbym dać na brzegach podwójne przelotki i sfrezować drugą do brzegu PCB - będzie można lutować stampa powierzchniowo.
+
+Mainboard v1:
+
+SCH:
+1) Nie zostały wygenerowane desygnatory podzespołów.
+2) Zamiast modeli elementów wykonawczych wstawić docelowe złącza (śrubowe, zaciskowe, etc.)
+3) G3MB-202P-DC12 są układami SSR izolowanymi (hurtownie oznaczają go jako przestarzały/nieaktualny). Po co, skoro i tak układy wykonawcze są zasilane z tej samej linii co reszta układu? MOS w konfiguracji opendrain z zabezpieczeniem byłby dużo tańszą opcją (w zakresie 20-30V są tanie tranzystory z Vth=1,5V i bardzo niskim RDSon). Ponadto można zrobić proste sprzężenie zwrotne w postaci rezystora mierzącego prąd, dzięki któremu możemy wygenerować informację, że zawór nie jest podłączony lub jest zepsuty.
+
+4) LM358 jest OPampem z układem wejściowym na BJT pnp. Ma on tak duże prądy wejściowe i napięcie niezrównoważenia, że pomiar będzie miał bardzo duży błąd. Ponadto pętla sprzężenia ma za dużą impedancje jak na ten OPamp. filtracja 100k i 1,5u też nie jest zasadna. Tak wysoka rezystancja źródła i impedancja wejściowa ADC (jaka jest pewnie Espressif nie podaje) zakłóci wynik pomiaru. Poza tym nie jest potrzebne do tego zasilanie 5V. Osobne zasilanie dzielnika PT1000 i referencji ADC powoduje, że błąd jest jeszcze zwiększany z powodu rozrzutu napięć stabilizatorów.
+Moja propozycja to zastosować wzmacniacz adekwatny z niskimi prądami i napięciami niezrównoważenia na dodatek rail-to-rail jeśli potrzeba. PT1000 w dzielniku nie da tak wysokiego du/dT jak np. sterowanie prądowe, albo praca w mostku. Może Pan np. wrzucić tam LT3092 albo stary leciwy LM334 w obwodzie z kompensacją temperaturową. Mostek też nie jest złą opcją, wtedy opamp w konfiguracji wzmacniacza różnicowego (tutaj też trzeba by się dodatkowo zastanowić na tolerancją rezystorów).
+5) Aaaa, widzę, że jest tutaj w zanadrzu HX771. Jest model na sch ze złą liczbą wyprowadzeń, poza tym sam układ jest słabo dostępny.
+6) PT1000 występują również w wersjach 3 i 4 końcówkowych.
+7) Brak modelu wyświetlacza na schemacie.
+8) PT1000 też powinny mieć złącza śrubowe, zaciskowe, etc.
+9) LM2596 ma inną liczbę wyprowadzeń, wymaga ponadto elementów zewnętrznych.

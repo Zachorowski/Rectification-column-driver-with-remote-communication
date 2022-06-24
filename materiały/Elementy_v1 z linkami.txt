@@ -1,0 +1,26 @@
+Procesor
+https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+Termometry PT100/PT1000
+
+SSR Zasilanie
+https://botland.com.pl/przekazniki-polprzewodnikowe-ssr/14499-przekaznik-polprzewodnikowy-ssr-fotek-25-da-25a-380vac-32vdc-5904422348250.html
+
+SSR pomniejsze rzeczy 
+https://www.tme.eu/pl/details/epr411a064000ez/przekazniki-ssr-jednofazowe/ece/
+
+
+Przetwornik do belki tensometrycznej 
+HX711 
+
+Belka tensometryczna
+https://botland.com.pl/czujniki-nacisku/12671-belka-tensometryczna-na1-8kg-80n-5904422319861.html
+
+Wyświetlacz
+https://botland.com.pl/wyswietlacze-oled/4437-wyswietlacz-oled-dwukolorowy-graficzny-096-b-128x64px-spi-i2c-proste-zlacza-waveshare-9092-5904422371944.html
+https://botland.com.pl/wyswietlacze-lcd-tft-i-ips/10754-wyswietlacz-lcd-tft-kolorowy-18-128x160px-spi-waveshare-13892-5904422316600.html
+
+
+
+
+Przetwornica 12V-> 3,3V
+ISL85415

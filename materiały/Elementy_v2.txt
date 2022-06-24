@@ -1,0 +1,21 @@
+Procesor:
+https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf
+
+Stabilizator:
+https://www.tme.eu/pl/details/ld1117dt50c/stabilizatory-napiecia-nieregulowane-ldo/stmicroelectronics/ld1117dt50ctr/
+
+Przetwornica:
+https://botland.com.pl/przetwornice-step-down/2967-przetwornica-step-down-lm2596-32v-35v-3a-5903351241397.html
+
+SSR:
+https://botland.com.pl/przekazniki-polprzewodnikowe-ssr/14499-przekaznik-polprzewodnikowy-ssr-fotek-25-da-25a-380vac-32vdc-5904422348250.html
+https://datasheet.octopart.com/G3MB-202PEG-4-DC20MA-Omron-datasheet-111010.pdf
+
+Przetwornik belki:
+https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf
+
+Belka tensometryczna:
+https://botland.com.pl/czujniki-nacisku/12671-belka-tensometryczna-na1-8kg-80n-5904422319861.html
+
+Wyświetlacz:
+https://botland.com.pl/wyswietlacze-i-ekrany/8866-wyswietlacz-oled-niebieski-graficzny-096-128x64px-i2c-niebieski-5904422337421.html

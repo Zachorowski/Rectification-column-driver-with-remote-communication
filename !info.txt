@@ -1,0 +1,100 @@
+Stanisław Zachorowski
+szachorowski@student.agh.edu.pl
+gr 1, czwartek 8:00
+Temat projektu:
+
+03,03,2022
+Zajęcia organizacyjne 
+Na przyszły tydzień z grubsza opracowany temat projektu
+
+10,03,2022
+Układ ma posiadać możliwość pomiaru/kontroli wszystkich fumkcji (pady testowe) !!!!!
+Możliwie ciasne umiejscowienie elementów impedancyjnych 
+Protokoły protokoły protokoły !!!
+Standardy 
+Wrzucić wszystko na SVN 
+
+17,03,2022
+Prezentacja układów vol.2 
+pamiętać o złączu do programowania !!!!!!!!
+
+POMIAR TEMPERATURY:
+PT100?
+PT1000?
+
+STEROWANIE MOCĄ:
+przekaźnnik półprzewodnikowy SSR 
+Sterownik PID 
+
+
+PROCESOR:
+Espressif 
+risk V
+Przetworniki ADC 14bit 
+komunikacja wifi 
+
+KOMUNIKACJA
+WiFi web api 
+Proste, niezawodne, brak potrzeby sterowania wieloma urządzeniami na raz 
+
+ZASIALNIE 
+Zasilacz na 12V z przetwornicą na napięcie potrzebe do obsługi systemu 
+
+ZAPISYWANIE
+SPI na karcie 
+
+31,03,22
+Na za tydzień schematy stampów w CAD
+Na za dwa tygodnie projekty PCB 
+
+Korzystamy z elementów 0603
+Problemy z zasilanime mocnych procesorów (np.STM32F7)
+
+Znaleźć manuala procesora
+noty katalogowe 
+reference manual 
+
+Reulatory impulsowe DC/DC
+
+nRF5340(procek do audio LE)
+
+mostek wetsona 
+
+Do dopytania:
+Czy wcisnąć przycisk od programowania i restart na płytkę
+Czy wcisnąć port SD
+Jak ogarnąć zewnętrzny zegar 
+Jak załatwić podział na antenę i gniazdo 
+LED ON?
+
+--Materiały:
+inspiracje
+https://www.espressif.com/sites/default/files/documentation/esp32-wrover_datasheet_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32-wrover-b_datasheet_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
+esp32 datasheet
+https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+https://www.espressif.com/sites/default/files/documentation/esp32_hardware_design_guidelines_en.pdf
+Antenna
+https://www.nxp.com/docs/en/nxp/application-notes/AN11994.pdf
+
+https://www.youtube.com/watch?v=wLwKgMBWhpY
+
+Ciekawsze rozwiązania na mainbardzie do sprawozdania (układ pomiarowy temperatury?)
+Prezentacja podsumowująca ma być podstawą pod naszą opowieść o projekcie 
+FA - 20H Ocillator 40MHz
+
+https://docs.toradex.com/102492-layout-design-guide.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+ 
